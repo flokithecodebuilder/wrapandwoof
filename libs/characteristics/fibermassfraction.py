@@ -13,6 +13,9 @@ class FiberMassFraction:
     def accountmatrixmassfraction(self):
         return (float(self.mass_matrix)/self.total_mass)
 
+    def accountvolumefractionfrommass(self, sp_mass_fiber, sp_mass_matrix):
+        return (float(self.mass_fraction)/sp_mass_fiber) / ((float(self.mass_fraction)/sp_mass_fiber) + (float(self.matrix_mass_fraction)/sp_mass_matrix))
+
 
 # Examples of using this class
 # temp = FiberMassFraction(10, 5)
