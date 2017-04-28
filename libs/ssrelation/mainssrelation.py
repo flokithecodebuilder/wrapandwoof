@@ -82,6 +82,6 @@ class StressStrainRelation():
         stress = {
             'x': self.qxx*strainx + self.qxy*strainy,
             'y': self.qyy*strainy + self.qyx*strainx,
-            's': self.qss*starins
+            's': self.qss*strains
         }
-        return strain;
+        return stress;

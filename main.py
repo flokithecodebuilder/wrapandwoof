@@ -16,3 +16,6 @@ from libs.ssrelation.mainssrelation import StressStrainRelation
 #print temp.calculateStrain(400, 60, 15);
 
 ## Example 3 Tsai -- uncomment for run
+q = [181.8, 10.34, 7.17, 2.897, 2.897];
+temp = StressStrainRelation(Q = q);
+print temp.calculateStress(2.117, 5.206, 2.092);
