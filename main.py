@@ -32,9 +32,11 @@ from math import cos,sin, pi
 ############## Chapter 2 #################
 
 ## Example 1 - Chap 2 Tsai -- uncomment for run
-#temp = TransformSS(45);
-#print temp.calculateStressOnAxisFromOffAxis(9,3,4);
+temp = TransformSS(45);
+print temp.calculateStressOnAxisFromOffAxis(9,3,4);
+print temp.dobuleAngleOffAxisToOnAxis(9,3,4);
+print temp.invariantOffAxisToOnAxis(9,3,4);
 
 ## Example 2 - Chap 2 Tsai -- uncomment for run
-temp = TransformSS(45);
-print temp.calculateStressOffAxisFromOnAxis(8,4,-6);
+#temp = TransformSS(45);
+#print temp.calculateStressOffAxisFromOnAxis(8,4,-6);
